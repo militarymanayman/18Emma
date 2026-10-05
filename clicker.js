@@ -14,7 +14,7 @@ function divideCell(cell) {
   cell.classList.add('is-dividing');
   cellStage.append(newCell);
 
-  const photo = window.photoPool[nextPhoto % window.photoPool.length];
+  const photo = window.foscoloPool[nextPhoto % window.foscoloPool.length];
   nextPhoto += 1;
   cellCount.textContent = String(cellStage.children.length);
   stageNote.textContent = `${cellStage.children.length} little cells, and counting.`;
