@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7ed">
+    <title>Little Cells | Emma's birthday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="photo-pool.js" defer></script>
+    <script src="clicker.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Little Cells home">little <span>cells</span><i aria-hidden="true">*</i></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-link is-current" href="index.html" aria-current="page">The clicker</a>
+        <a class="nav-link" href="gallery.html">Photo gallery</a>
+      </nav>
+    </header>
+
+    <main class="clicker-page">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> A tiny birthday experiment</p>
+        <div class="intro-row">
+          <div>
+            <h1 id="page-title">One little cell.<br><span>A lot of life.</span></h1>
+            <p class="intro-copy">Give a photo a little nudge and watch the memories multiply.</p>
+          </div>
+          <div class="cell-count" aria-label="Cell count">
+            <span class="count-number" id="cell-count">1</span>
+            <span class="count-label">little cells</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="division-area" aria-label="Photo cell clicker">
+        <div class="division-heading">
+          <span>Choose a photo to divide</span>
+          <span class="division-mark" aria-hidden="true">+</span>
+        </div>
+        <div class="cell-stage" id="cell-stage" aria-live="polite">
+          <button class="cell" type="button" aria-label="Divide this photo into two cells">
+            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Colorful birthday balloons">
+            <span class="cell-halo" aria-hidden="true"></span>
+          </button>
+        </div>
+        <p class="stage-note" id="stage-note">One photo, ready to divide.</p>
+      </section>
+
+      <footer class="page-footer">
+        <span>Made for Emma, with love</span>
+        <span class="footer-star" aria-hidden="true">✳</span>
+      </footer>
+    </main>
+  </body>
+</html>
